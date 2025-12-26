@@ -1,7 +1,7 @@
 package Map::Tube::Sydney;
 
 $Map::Tube::Sydney::VERSION   = '1.00';
-$Map::Tube::Sydney::AUTHORITY = 'cpan:EARLYBEAN4';
+$Map::Tube::Sydney::AUTHORITY = 'cpan:EARLYBEAN';
 
 =head1 NAME
 

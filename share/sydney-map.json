@@ -72,6 +72,56 @@
         "color": "#e4022d"
       },
       {
+        "id": "F1",
+        "name": "F1",
+        "color": "#00774b"
+      },
+      {
+        "id": "F2",
+        "name": "F2",
+        "color": "#144734"
+      },
+      {
+        "id": "F3",
+        "name": "F3",
+        "color": "#648c3c"
+      },
+      {
+        "id": "F4",
+        "name": "F4",
+        "color": "#bfd730"
+      },
+      {
+        "id": "F5",
+        "name": "F5",
+        "color": "#286142"
+      },
+      {
+        "id": "F6",
+        "name": "F6",
+        "color": "#00ab51"
+      },
+      {
+        "id": "F7",
+        "name": "F7",
+        "color": "#00b189"
+      },
+      {
+        "id": "F8",
+        "name": "F8",
+        "color": "#55622b"
+      },
+      {
+        "id": "F9",
+        "name": "F9",
+        "color": "#65b32e"
+      },
+      {
+        "id": "F10",
+        "name": "F10",
+        "color": "#5ab031"
+      },
+      {
         "id": "Walk1",
         "name": "Walk1",
         "color": "#000000"
@@ -98,7 +148,7 @@
       }
     ]
   },
-  "name": "Sydney Rail Network",
+  "name": "Sydney Public Transport Network",
   "stations": {
     "station": [
       {
@@ -135,7 +185,8 @@
         "id": "L106",
         "name": "Pyrmont Bay",
         "line": "L1",
-        "link": "L105,L107"
+        "link": "L105,L107",
+        "other_link": "Walk:F41"
       },
       {
         "id": "L107",
@@ -501,7 +552,8 @@
         "id": "M114",
         "name": "Barangaroo",
         "line": "M1",
-        "link": "M113,T404"
+        "link": "M113,T404",
+        "other_link": "Walk:F33"
       },
       {
         "id": "M115",
@@ -645,13 +697,15 @@
         "id": "T121",
         "name": "Milsons Point",
         "line": "T1,T9",
-        "link": "T120,T122"
+        "link": "T120,T122",
+        "other_link": "Walk:F31"
       },
       {
         "id": "T122",
         "name": "Wynyard",
         "line": "T1,T2,T3,T8,T9,L2,L3",
-        "link": "T121,T123,T203,L201,L202"
+        "link": "T121,T123,T203,L201,L202",
+        "other_link": "Walk:F33"
       },
       {
         "id": "T123",
@@ -687,7 +741,8 @@
         "id": "T128",
         "name": "Parramatta",
         "line": "T1,T2,T5,Walk5",
-        "link": "T218,T129,L408"
+        "link": "T218,T129,L408",
+        "other_link": "Walk:F316"
       },
       {
         "id": "T129",
@@ -848,8 +903,8 @@
       {
         "id": "T203",
         "name": "Circular Quay",
-        "line": "T2,T3,T8,L2,L3",
-        "link": "T202,T122,L201"
+        "line": "T2,T3,T8,L2,L3,F1,F2,F3,F4,F5,F6,F7,F8,F9",
+        "link": "T202,T122,L201,F1,F2,F31,F35,F51,F61,F71,F91"
       },
       {
         "id": "T204",
@@ -1425,7 +1480,8 @@
         "id": "T904",
         "name": "Meadowbank",
         "line": "T9",
-        "link": "T903,T905"
+        "link": "T903,T905",
+        "other_link": "Walk:F313"
       },
       {
         "id": "T905",
@@ -1480,6 +1536,233 @@
         "name": "Normanhurst",
         "line": "T9",
         "link": "T912,T105"
+      },
+      {
+        "id": "F1",
+        "name": "Manly Wharf",
+        "line": "F1",
+        "link": "T203"
+      },
+      {
+        "id": "F2",
+        "name": "Taronga Zoo",
+        "line": "F2",
+        "link": "T203"
+      },
+      {
+        "id": "F31",
+        "name": "Milsons Point Wharf",
+        "line": "F3,F4",
+        "link": "T203,F32",
+        "other_link": "Walk:T121"
+      },
+      {
+        "id": "F32",
+        "name": "McMahons Point",
+        "line": "F3,F4",
+        "link": "F31,F33,F34"
+      },
+      {
+        "id": "F33",
+        "name": "Barangaroo Wharf",
+        "line": "F3,F4,F10",
+        "link": "F32,F34,F41,F101",
+        "other_link": "Walk:T122,Walk:M114"
+      },
+      {
+        "id": "F101",
+        "name": "Pirrama Park",
+        "line": "F10",
+        "link": "F33,F102"
+      },
+      {
+        "id": "F102",
+        "name": "Blackwattle Bay",
+        "line": "F10",
+        "link": "F101"
+      },
+      {
+        "id": "F34",
+        "name": "Balmain East",
+        "line": "F3,F4",
+        "link": "F32,F33,F35"
+      },
+      {
+        "id": "F41",
+        "name": "Pyrmont Bay Wharf",
+        "line": "F4",
+        "link": "F33",
+        "other_link": "Walk:L106"
+      },
+      {
+        "id": "F35",
+        "name": "Balmain",
+        "line": "F3,F8",
+        "link": "F34,F36,T203"
+      },
+      {
+        "id": "F81",
+        "name": "Birchgrove",
+        "line": "F8",
+        "link": "F35,F82"
+      },
+      {
+        "id": "F82",
+        "name": "Greenwich Point",
+        "line": "F8",
+        "link": "F81,F83"
+      },
+      {
+        "id": "F83",
+        "name": "Woolwich",
+        "line": "F8",
+        "link": "F82,F84"
+      },
+      {
+        "id": "F84",
+        "name": "Cockatoo Island",
+        "line": "F3,F8",
+        "link": "F36,F37,F83"
+      },
+      {
+        "id": "F36",
+        "name": "Balmain West",
+        "line": "F3",
+        "link": "F35,F84"
+      },
+      {
+        "id": "F37",
+        "name": "Drummoyne",
+        "line": "F3",
+        "link": "F84,F38"
+      },
+      {
+        "id": "F38",
+        "name": "Huntleys Point",
+        "line": "F3",
+        "link": "F37,F39"
+      },
+      {
+        "id": "F39",
+        "name": "Chiswick",
+        "line": "F3",
+        "link": "F38,F310"
+      },
+      {
+        "id": "F310",
+        "name": "Abbotsford",
+        "line": "F3",
+        "link": "F39,F311"
+      },
+      {
+        "id": "F311",
+        "name": "Cabarita",
+        "line": "F3",
+        "link": "F310,F312"
+      },
+      {
+        "id": "F312",
+        "name": "Kissing Point",
+        "line": "F3",
+        "link": "F311,F313"
+      },
+      {
+        "id": "F313",
+        "name": "Meadowbank wharf",
+        "line": "F3",
+        "link": "F312,F314",
+        "other_link": "Walk:T904"
+      },
+      {
+        "id": "F314",
+        "name": "Sydney Olympic Park",
+        "line": "F3",
+        "link": "F313,F315"
+      },
+      {
+        "id": "F315",
+        "name": "Rydalmere",
+        "line": "F3",
+        "link": "F314,F316"
+      },
+      {
+        "id": "F316",
+        "name": "Parramatta wharf",
+        "line": "F3",
+        "link": "F315",
+        "other_link": "Walk:T128"
+      },
+      {
+        "id": "F51",
+        "name": "Kirribilli",
+        "line": "F5",
+        "link": "T203,F52,F54"
+      },
+      {
+        "id": "F52",
+        "name": "North Sydney wharf",
+        "line": "F5",
+        "link": "F51,F53"
+      },
+      {
+        "id": "F53",
+        "name": "Neutral Bay",
+        "line": "F5",
+        "link": "F52,F54"
+      },
+      {
+        "id": "F54",
+        "name": "Kurraba Point",
+        "line": "F5",
+        "link": "F53,F51"
+      },
+      {
+        "id": "F61",
+        "name": "Cremorne Point",
+        "line": "F6",
+        "link": "T203,F62"
+      },
+      {
+        "id": "F62",
+        "name": "South Mosman",
+        "line": "F6",
+        "link": "F61,F63"
+      },
+      {
+        "id": "F63",
+        "name": "Old Cremorne",
+        "line": "F6",
+        "link": "F62,F64"
+      },
+      {
+        "id": "F64",
+        "name": "Mosman Bay",
+        "line": "F6",
+        "link": "F63"
+      },
+      {
+        "id": "F71",
+        "name": "Darling Point",
+        "line": "F7",
+        "link": "T203,F72"
+      },
+      {
+        "id": "F72",
+        "name": "Double Bay",
+        "line": "F7",
+        "link": "F71"
+      },
+      {
+        "id": "F91",
+        "name": "Rose Bay",
+        "line": "F9",
+        "link": "T203,F92"
+      },
+      {
+        "id": "F92",
+        "name": "Watsons Bay",
+        "line": "F9",
+        "link": "F91"
       }
     ]
   }
